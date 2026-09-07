@@ -1,0 +1,16 @@
+.DS_Store
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.db
+*.sqlite*
+node_modules/
+.venv/
+__pycache__/
+data/
+exports/
+tokens/
+.local/
+artifacts/
