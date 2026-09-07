@@ -1,15 +1,16 @@
 # Реєстрація застосунку в Oura
 
-Ці адреси стають робочими після успішного розгортання GitHub Pages.
+Для перевірки застосунку використовуйте повні англомовні версії сторінок.
+На кожній сторінці є перемикач УКР / EN, який відкриває той самий документ іншою мовою.
 
 | Поле | Значення |
 | --- | --- |
 | Display Name | Personal Wellness Journal |
 | Description | Personal, non-commercial application to access and analyze my own sleep, activity, and recovery data and generate reports in Ukrainian. Currently in development. |
 | Contact Email | Власна дійсна контактна адреса власника; у цей публічний файл її не додаємо. |
-| Website | https://fedak.github.io/personal-wellness-journal/ |
-| Privacy Policy | https://fedak.github.io/personal-wellness-journal/privacy.html |
-| Terms of Service | https://fedak.github.io/personal-wellness-journal/terms.html |
+| Website | https://fedak.github.io/personal-wellness-journal/en/ |
+| Privacy Policy | https://fedak.github.io/personal-wellness-journal/en/privacy.html |
+| Terms of Service | https://fedak.github.io/personal-wellness-journal/en/terms.html |
 
 ## Redirect URI — окреме налаштування
 

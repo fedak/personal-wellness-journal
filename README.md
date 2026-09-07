@@ -5,12 +5,25 @@
 
 ## Публічні сторінки
 
+Українською:
+
 - Опис: https://fedak.github.io/personal-wellness-journal/
 - Конфіденційність: https://fedak.github.io/personal-wellness-journal/privacy.html
 - Умови: https://fedak.github.io/personal-wellness-journal/terms.html
 
+Англійською (для форми Oura):
+
+- About: https://fedak.github.io/personal-wellness-journal/en/
+- Privacy Policy: https://fedak.github.io/personal-wellness-journal/en/privacy.html
+- Terms of Service: https://fedak.github.io/personal-wellness-journal/en/terms.html
+
 Сайт — звичайні HTML і CSS без JavaScript, зовнішніх шрифтів, трекерів і залежностей.
-Доступні мобільна версія, навігація клавіатурою, стилі друку та англомовні резюме.
+Кожна сторінка має повні українську й англійську версії. Перемикач УКР / EN
+відкриває відповідний документ іншою мовою; навігація зберігає вибрану мову.
+Мова визначається URL без автоматичних перенаправлень, cookies чи JavaScript.
+Доступні мобільна версія, навігація клавіатурою та стилі друку.
+
+Під час зміни текстів оновлюйте обидві мовні версії й однакову дату документів.
 
 ## Локальний перегляд
 
