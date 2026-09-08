@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="How Personal Wellness Journal handles website visitors' data and plans to process its owner's personal Oura data.">
+  <meta name="description" content="How Personal Wellness Journal handles website visitors' data and stores its owner's personal Oura data locally.">
   <meta name="theme-color" content="#f7f5ed">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <title>Privacy Policy — Personal Wellness Journal</title>
@@ -29,16 +29,17 @@
       <p class="updated">Last updated <time datetime="2026-09-08">September 8, 2026</time></p>
       <div class="summary"><p>This is currently a static informational website. It is not connected to your Oura account, does not request health metrics, and does not send them to AI systems.</p></div>
       <h2>1. The project and its operator</h2>
-      <p>Personal Wellness Journal is a personal, non-commercial project maintained by the owner of the GitHub account <a href="https://github.com/fedak">fedak</a>. This policy describes the current website and the planned local client for the owner's own data. Registration by other users is not currently planned.</p>
+      <p>Personal Wellness Journal is a personal, non-commercial project maintained by the owner of the GitHub account <a href="https://github.com/fedak">fedak</a>. This policy describes the public informational website and a separate local client for the owner's own data. Registration by other users is not currently planned.</p>
       <h2>2. Data when visiting the website</h2>
       <p>The website has no forms, advertising modules, analytics trackers, third-party fonts, or embedded content. Its code does not set cookies or use browser storage. Simply opening a page does not give the project access to Oura.</p>
       <p>The pages are hosted on GitHub Pages. GitHub receives technical web request data and states that it logs visitors' IP addresses for security purposes. Processing and retention of this data are governed by <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub's privacy statement</a>. The project owner does not control the hosting logs.</p>
-      <h2>3. Planned Oura integration</h2>
-      <p>The integration has not yet been implemented. The planned local client will retrieve data only after the owner's explicit authorization through Oura OAuth2. The Oura password must be entered only on Oura's own website.</p>
-      <p>Depending on the permissions granted, the client may request sleep, activity, readiness, heart rate and HRV, SpO₂, stress, heart health, workout, and tag data. Profile and session data may be requested only if the corresponding features are added and the owner grants permission. The purpose is to create personal charts, comparisons across periods, and reports in Ukrainian.</p>
+      <h2>3. Oura integration</h2>
+      <p>The local client retrieves data after the owner's explicit authorization through Oura OAuth2. The password is entered only on Oura's own website. A service on the Mac synchronizes data approximately every 30 minutes while the computer is awake, the owner is logged in, and an internet connection is available. The initial import and a weekly recheck cover the history available through the API.</p>
+      <p>Depending on the permissions granted, the client requests all 19 supported API data types: sleep, activity, readiness, heart rate and HRV, SpO₂, stress, resilience, heart health, workouts, sessions, tags, bedtime guidance, rest mode, profile, battery levels, and ring configuration. The purpose is a personal archive, charts, comparisons across periods, and reports in Ukrainian.</p>
       <h2>4. Storage, access, and deletion</h2>
-      <p>The current website has no health-data database and does not store Oura tokens. The planned first version of the client will run on the owner's computer: data retrieved for a report will be processed in memory during the session, without an automatic persistent archive. Access credentials will be stored locally with restricted access, outside the public repository and website.</p>
-      <p>The future client is intended to allow processing to be stopped by closing it and revoking access in Oura's integration settings. Local tokens will be removable. If report or history storage is added, the storage location, retention period, and deletion procedure will be described here before that feature launches.</p>
+      <p>The public website has no health-data database and does not store Oura tokens. The local client stores complete API responses, retrieved records, and their observed versions in a SQLite database in the private Personal Wellness Journal folder under Library/Application Support on the owner's Mac. Synchronization updates a backup on the same Mac daily. There is no automatic expiration: data is retained until the owner deletes it. The report tables' 30-day display limit does not limit the archive.</p>
+      <p>The folder is accessible only to the owner's user account; database and credential files have restricted access permissions. Tokens are stored separately from the archive. The local report page is accessible only on this computer. The client, credentials, and data are not published in the repository or on GitHub Pages.</p>
+      <p>To stop data retrieval, the owner can stop and disable the background service or revoke access in Oura's integration settings. Closing the browser does not stop the service, and revoking access does not delete previously stored history. To delete local data, stop the service and remove the archive folder, including the database, SQLite sidecar files, and backup, as well as any exports created by the owner. Tokens and credentials can be removed separately.</p>
       <h2>5. Data sharing and AI</h2>
       <p>The project currently has no connected AI providers or health-data processing services. The public website does not sell or share such data. Links to GitHub and Oura lead to separate websites with their own privacy policies.</p>
       <p>If AI-generated explanations or other external processing are added, this policy will be updated before activation to identify the provider, the data shared, the purpose, retention periods, and available privacy settings. Such sharing will require a separate, explicit decision by the owner and consideration of the applicable Oura terms.</p>
